@@ -666,9 +666,24 @@ footer {
 }
 
 .announcement-banner {
-  background-color: #388e3c;
+  background-color: var(--success);
   color: white;
   text-align: center;
   padding: 15px;
   font-weight: bold;
+}
+
+/* Responsive adjustments for announcement banner */
+@media (max-width: 600px) {
+  .announcement-banner {
+    padding: 8px 10px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .announcement-banner {
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
 }
